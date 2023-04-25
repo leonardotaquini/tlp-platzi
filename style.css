@@ -2,10 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: none;
+    
 }
+
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
 
 .cabecera{
     height: 10vh;
+    background-color:#242627e1;
 }
 main{
     height: 80vh;
@@ -16,3 +25,20 @@ main{
     background-color:#242627e1;
 }
 
+.main{
+    background-color: #242627;
+}
+.cursos{
+    border: none!important;
+}
+.titulo{
+    color: rgba(133, 241, 83, 0.747);
+    text-shadow: 2px 2px 2px black;
+    
+}
+.cursos-container{
+    height: 80vh;
+    background-color:#242627e1;
+    width: 100vw;
+    overflow-y: scroll;
+}
